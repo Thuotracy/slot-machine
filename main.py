@@ -27,6 +27,7 @@ symbol_value = {
 
 def check_winnings(columns, lines, bet, values):
     winnings = 0
+    winning_lines = []
     for line in range(lines):
         symbol = columns[0][line]
         for column in columns:
@@ -34,9 +35,10 @@ def check_winnings(columns, lines, bet, values):
             if symbol != symbol_to_check:
                 break
         else:
-            winning += values[symbol] * bet
+            winnings += values[symbol] * bet
+            winning_lines.append(line + 1)
 
-    return winnings
+    return winnings, winning_lines
 
 def get_slot_machine_spin(rows, cols, symbols):
     all_symbols = []
@@ -129,5 +131,7 @@ def main():
 
     slots =get_slot_machine_spin(ROWS, COLS, symbol_count)
     print_slot_machine(slots)
+    winnings = check_winnings(slots, lines, bet, symbol_value)
+    print(f"You won ${winnings}!")
 
 main()
