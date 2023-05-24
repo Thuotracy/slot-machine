@@ -132,17 +132,17 @@ def spin(balance):
     print_slot_machine(slots)
     winnings, winning_lines = check_winnings(slots, lines, bet, symbol_value)
     print(f"You won ${winnings}!")
-    print(f"You won on lines: " *winning_lines)
+    print(f"You won on lines:", *winning_lines)
     return winnings - total_bet
 
 def main():
-    balance = deposit(balance) 
+    balance = deposit() 
     while True:
         print(f"Current balance is ${balance}")
         answer = input("Please enter to play (q to quit).")
         if answer == "q":
             break
-        balance += spin()
+        balance += spin(balance)
 
     print(f"You left with ${balance}")
 
