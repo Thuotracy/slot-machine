@@ -22,7 +22,7 @@ An betting slot game that allows the user to bet an amount of money to play.
 
 * Open Terminal {Ctrl+Alt+T}
 
-* git clone ```git@github.com:Thuotracy/slot-machine.git
+* git clone git@github.com:Thuotracy/slot-machine.git
 
 * open in you IDE
 
