@@ -1,4 +1,4 @@
-# password-manager
+# SLOT MACHINE
 
 ## Description
 
