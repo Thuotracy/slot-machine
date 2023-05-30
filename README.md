@@ -6,6 +6,8 @@ An betting slot game that allows the user to bet an amount of money to play.
 
 ##  How to play
 * Deposit the amount of money you would like to bet.
+* Select the number of lines you would like to bet on.
+* Enter the amount you would like to bet on each line.
 
 
 
