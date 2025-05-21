@@ -1,4 +1,3 @@
-
 # SLOT MACHINE
 ## Description
 An betting slot game that allows the user to bet an amount of money to play.
